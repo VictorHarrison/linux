@@ -25,4 +25,5 @@ passwd: password updated successfully
 
 sudo mkhomedir_helper usertest
 	
-
+#add user to sudo group
+sudo usermod -a -G sudo usertest
