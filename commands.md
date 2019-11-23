@@ -1,7 +1,8 @@
-#add users on linux system
-man page: man useradd
+# create and manager users on linux system
+-- man page: man useradd
 
 example:
+
 	sudo useradd -m usertest
 
 victor@note-837:~/git-harrison/linux$ cat /etc/passwd | grep usertest
@@ -15,15 +16,15 @@ Retype new UNIX password:
 passwd: password updated successfully
 
 
-#usermod
+## usermod
 
-#The usermod command modifies the system account files to reflect the changes that are specified on the command line.
+The usermod command modifies the system account files to reflect the changes that are specified on the command line.
 
 
 
-#Linux system has mkhomedir_helper to creat a home diretory to user tha haven't this
+-- Linux system has `mkhomedir_helper` to creat a home diretory to user tha haven't this
 
-sudo mkhomedir_helper usertest
+	sudo mkhomedir_helper usertest
 	
-#add user to sudo group
-sudo usermod -a -G sudo usertest
+## add user to sudo group
+	sudo usermod -a -G sudo usertest
