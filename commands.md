@@ -6,7 +6,7 @@ example:
 	sudo useradd -m usertest
 
 victor@note-837:~/git-harrison/linux$ cat /etc/passwd | grep usertest
-	usertest:x:1002:1002::/home/usertest:/bin/sh
+usertest:x:1002:1002::/home/usertest:/bin/sh
 
 	sudo passwd usertest -m
 
@@ -22,7 +22,7 @@ The usermod command modifies the system account files to reflect the changes tha
 
 
 
-- Linux system has `mkhomedir_helper` to creat a home diretory to user tha haven't this
+- Linux system has `mkhomedir_helper` to creat a home diretory to user tha hasn't this
 
 	sudo mkhomedir_helper usertest
 	
