@@ -6,7 +6,7 @@ example:
 	sudo useradd -m usertest
 
 "victor@note-837:~/git-harrison/linux$ cat /etc/passwd | grep usertest
-usertest\:x\:1002\:1002\:\:/home/usertest\:/bin/sh"
+usertest\:\x\:1002\:1002\:\:/home/usertest\:/bin/sh"
 
 	sudo passwd usertest -m
 
