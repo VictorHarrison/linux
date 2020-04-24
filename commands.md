@@ -1,4 +1,4 @@
-# create and manager users on linux system
+# Create and manager users on linux system
 - man page: man useradd
 
 example:
@@ -28,3 +28,6 @@ The usermod command modifies the system account files to reflect the changes tha
 	
 ## add user to sudo group
 	sudo usermod -a -G sudo usertest
+
+victor@note-837:/home/usertest$ cat /etc/group | grep sudo
+sudo:x:27:victor,office,usertest
